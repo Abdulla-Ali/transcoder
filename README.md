@@ -116,6 +116,16 @@ it (including yourself) and docstrings for people that have to make
 use of it without viewing the internals.  That could be users, or
 people calling on your classes and functions in their own code.
 
+### Prettier documentation
+
+To view the documentation in your browser, you have some options.  The
+basic methods are: generate HTML versions of your documentation and
+store it to be viewed in your browser *or* use the built-in web server
+that `pydoc` contains to generate your documentation on the fly and
+point your browser at it.
+
+TODO: this bit
+
 ## Virtualenv
 
 Python is a very popular programming language. This means there are
@@ -187,3 +197,19 @@ This is OK to test that you at least have your environment set up, but
 it's not really enough to test the software is working perfectly.
 
 TODO: write about testing.
+
+
+# Completing Transcoder
+
+TODO:
+
+ - asASCII (basic)
+ - User input (intermediate)
+ - wrapping (advanced)
+
+# TODO - things left to do before students get access
+
+ - Clear up TODO items
+ - Put proper pydoc generation in and fill in all docstrings
+ - Write bit about cloning repo
+ - Write tests for asASCII (but not give the function)

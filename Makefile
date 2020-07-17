@@ -7,12 +7,19 @@ prereqs: venvcheck FORCE
 venv: FORCE
 	python3 -m venv venv
 
+docserve:
+	pydoc -p 5555
+
 venvcheck:
 ifeq ($(INVENV),)
 	$(error You should only run this from within the venv. Use '. ./venv/bin/activate')
 else
 	@echo "venv check passed\n"
 endif
+
+
+test: FORCE venvcheck
+	py.test -v  tests/ 
 
 
 FORCE:
