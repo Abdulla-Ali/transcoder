@@ -8,6 +8,8 @@ import transcoder
 
 
 
+
+
 def test_asHex():
     """ Test the 'asHex' function """
 
@@ -47,3 +49,17 @@ def test_asBinary():
     assert transcoder.asBinary(chr(255))=="0b11111111"
     #Lowest byte value
     assert transcoder.asBinary(chr(0))=="0b0"
+
+
+
+# def test_asASCII():
+#     """ Test the 'asASCII' function """
+#
+#     #First a simple string
+#     assert transcoder.asASCII("ABC")=="65 66 67"
+#     #An empty string
+#     assert transcoder.asASCII("")==""
+#     #The highest byte value
+#     assert transcoder.asASCII(chr(255))=="255"
+#     #Lowest byte value
+#     assert transcoder.asASCII(chr(0))=="0"
