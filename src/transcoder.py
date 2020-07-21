@@ -2,7 +2,7 @@
 """ Software and functions to convert from arbitrary strings to various representations of the individual characters """
 import colored
 
-TODO: Docstrings
+#TODO: Docstrings
 
 def asHex(data):
     #Start with an empty string
