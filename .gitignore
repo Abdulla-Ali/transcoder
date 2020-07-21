@@ -104,3 +104,4 @@ venv.bak/
 .mypy_cache/
 *~
 /transcoder.m.html
+/html/

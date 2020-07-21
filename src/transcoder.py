@@ -1,11 +1,23 @@
 #!python
-""" Software and functions to convert from arbitrary strings to various representations of the individual characters """
+"""Software and functions to convert from arbitrary strings to
+various representations of the individual characters"""
 import colored
 
 
 
 def asHex(data):
-    """ Return a string containing the hexadecimal representation of the input string.  For example, with the input "ABC", the function will return "0x41 0x42 0x43"
+    """String to printable hex conversion
+
+    Creates and returns a string containing the hexadecimal
+    representation of the input string.  For example, with the input
+    "ABC", the function will return "0x41 0x42 0x43".
+
+    Args:
+        data (string): a string to convert into the hex representation
+
+    Returns:
+        string: a string containing the hex representation of the input
+
     """
     
     #Start with an empty string
@@ -20,7 +32,23 @@ def asHex(data):
 
     return output.strip() #Take off any spare spaces at the start/end
 
+
+
+
 def asOctal(data):
+    """String to printable octal conversion
+
+    Creates and returns a string containing the octal
+    representation of the input string.  For example, with the input
+    "ABC", the function will return "0o101 0o102 0o103".
+
+    Args:
+        data (string): a string to convert into the octal representation
+
+    Returns:
+        string: a string containing the octal representation of the input
+
+    """
     output=""
 
     for c in data:
@@ -28,7 +56,21 @@ def asOctal(data):
 
     return output.strip()
 
+
+
 def asBinary(data):
+    """String to printable binary conversion
+
+    Creates and returns a string containing the binarya representation of the input string.  For example, with the input "ABC", the function will return "0b1000001 0b1000010 0b1000011"
+
+    Args:
+        data (string): a string to convert into the binary representation
+
+    Returns:
+        string: a string containing the binary representation of the input
+
+    """
+    
     output=""
     
     for c in data:
@@ -75,4 +117,4 @@ if __name__=="__main__":
 
 # JS: You can ignore the stuff below. It's just for my spell-checker.
 #  LocalWords:  Transcoder pre asHex JS inputData hexData  asOctal
-#  LocalWords:  octData binData asBinary
+#  LocalWords:  octData binData asBinary oct ord

@@ -8,7 +8,7 @@ venv: FORCE
 	python3 -m venv venv
 
 docs:
-	pdoc --html ./src/transcoder.py --overwrite
+	pdoc  --html ./src/transcoder.py --force
 
 venvcheck:
 ifeq ($(INVENV),)

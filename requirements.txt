@@ -1,4 +1,4 @@
 wheel
 colored
 pytest
-pdoc
+pdoc3
