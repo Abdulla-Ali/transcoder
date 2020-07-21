@@ -2,9 +2,12 @@
 """ Software and functions to convert from arbitrary strings to various representations of the individual characters """
 import colored
 
-#TODO: Docstrings
+
 
 def asHex(data):
+    """ Return a string containing the hexadecimal representation of the input string.  For example, with the input "ABC", the function will return "0x41 0x42 0x43"
+    """
+    
     #Start with an empty string
     output=""
 

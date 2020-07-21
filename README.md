@@ -106,9 +106,9 @@ will be classes, functions, modules and the data passed to or stored
 by these.
 
 To view the documentation for the file `transcoder.py`, from the
-directory in which this readme is located, you can execute `pydoc
+directory in which this readme is located, you can execute `pdoc
 ./src/transcoder.py`. It's just like a Linux `man` page.  Press Q to
-quit.
+quit if it goes over one screen.
 
 You should document your code as you write. Use comments for people
 that need to know what your code does in order to modify or maintain
@@ -118,11 +118,18 @@ people calling on your classes and functions in their own code.
 
 ### Prettier documentation
 
-To view the documentation in your browser, you have some options.  The
-basic methods are: generate HTML versions of your documentation and
-store it to be viewed in your browser *or* use the built-in web server
-that `pydoc` contains to generate your documentation on the fly and
-point your browser at it.
+To view the documentation in your browser, you can output the content
+as HTML and view it.  To do this, use `pdoc --html
+./src/transcoder.py`, which will generate a file called
+`transcoder.m.html` that you can view in your browser.
+
+To regenerate, you need to add the `--overwrite` option to the command
+to tell pdoc to overwrite the existing file.
+
+We've included a `Makefile` which is a special kind of file that the
+'make' command reads. We won't get into the details of `make` in this
+project, but what we have provided means that you can create the documentation. Just use `make
+docs`. 
 
 TODO: this bit
 
@@ -213,3 +220,6 @@ TODO:
  - Put proper pydoc generation in and fill in all docstrings
  - Write bit about cloning repo
  - Write tests for asASCII (but not give the function)
+
+<!--  LocalWords:  pdoc
+ -->

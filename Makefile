@@ -7,8 +7,8 @@ prereqs: venvcheck FORCE
 venv: FORCE
 	python3 -m venv venv
 
-# docserve:
-# 	pydoc -p 5555
+docs:
+	pdoc --html ./src/transcoder.py --overwrite
 
 venvcheck:
 ifeq ($(INVENV),)

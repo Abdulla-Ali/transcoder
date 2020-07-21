@@ -1,4 +1,4 @@
 wheel
 colored
 pytest
-sphinx
+pdoc
