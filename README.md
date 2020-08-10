@@ -40,9 +40,8 @@ TODO:
 # TODO - things left to do before students get access
 
  - Clear up TODO items
- - Put proper pydoc generation in and fill in all docstrings
  - Write bit about cloning repo
- - Write tests for asASCII (but not give the function)
+
 
 <!--  LocalWords:  pdoc
  -->
