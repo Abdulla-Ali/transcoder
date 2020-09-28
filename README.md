@@ -37,10 +37,10 @@ TODO:
  - User input (intermediate)
  - wrapping (advanced)
 
-# TODO - things left to do before students get access
 
- - Clear up TODO items
- - Write bit about cloning repo
+# Contributors
+
+ - Stanley Frankcam
 
 
 <!--  LocalWords:  pdoc
