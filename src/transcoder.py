@@ -61,7 +61,7 @@ def asOctal(data):
 def asBinary(data):
     """String to printable binary conversion
 
-    Creates and returns a string containing the binarya representation of the input string.  For example, with the input "ABC", the function will return "0b1000001 0b1000010 0b1000011"
+    Creates and returns a string containing the binary representation of the input string.  For example, with the input "ABC", the function will return "0b1000001 0b1000010 0b1000011"
 
     Args:
         data (string): a string to convert into the binary representation
